@@ -8,7 +8,7 @@ sgo 通过封装Go语言并发原语，为常用并发操作提供更高级的�
 
 ## 动机
 
-sgo的涉及理念来源于[Notes on structured concurrency, or: Go statement considered harmful](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/)。
+sgo的设计理念来源于[Notes on structured concurrency, or: Go statement considered harmful](https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful/)。
 
 文中指出，直接使用`go`关键字进行并发编程，其原始性堪比早期FLOW-MATIC语言中使用`goto`语句控制流程。这种低层次的并发控制会破坏代码抽象能力，不利于模块化开发和局部逻辑推理。正如结构化编程用顺序、选择、循环结构取代`goto`，结构化并发也需要通过高层抽象来取代对`go`的使用。
 
